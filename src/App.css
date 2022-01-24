@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital@1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 92%;
+  margin: 0px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.col__2 {
+  max-width: 50%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+.col__3 {
+  max-width: 33.333333%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.component__space {
+  padding: 100px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+button.btn {
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 2px solid #f9004d;
+  background-color: #f9004d;
+  color: #fff !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.4s all ease;
+  height: 50px;
+  width: 180px;
+  margin: 0px 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.purpleBtnHover:hover {
+  background: #fff;
+  color: #000 !important;
+}
+
+.p__color {
+  color: rgba(198, 201, 216, 0.75);
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .col__2 {
+    max-width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 768px) {
+  .col__3 {
+    max-width: 50%;
   }
+}
+@media only screen and (max-width: 425px) {
+  .col__3 {
+    max-width: 100%;
+  }
+}
+
+
+/*Dark mode */
+.dark .about{
+  background-color: white;
+  
+}
+
+.dark .about__text{
+  color: black;
+}
+
+.dark .home__bg{
+  background-color: white;
 }

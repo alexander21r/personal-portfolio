@@ -1,0 +1,150 @@
+.project {
+  background-color: #191919;
+}
+
+h1,
+h4,
+h5 {
+  color: white;
+}
+
+img.project__img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+  opacity: 0.7;
+  position: relative;
+  height: 340px;
+}
+
+img.project__img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+
+  opacity: 1;
+}
+
+.project__box {
+  cursor: pointer;
+  width: 420px;
+  position: relative;
+  height: 400px;
+}
+
+.mask__effect {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgb(25, 0, 255),
+    10px 10px 10px 10px rgb(255, 0, 255);
+  transition: 0.5s;
+  opacity: 0.3;
+  display: none;
+}
+
+.project__box:hover .mask__effect {
+  display: inline;
+  transform: translateY(5px);
+  transition: 0.1s ease-in;
+}
+.project__box:hover {
+  transform: translateY(10px);
+  transition: 0.3s ease-in;
+}
+
+.project__meta {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 100%;
+}
+
+h5.project__text {
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+h4.project__text {
+  font-size: 22px;
+
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.project__btns {
+  display: flex;
+  padding-top: 35px;
+}
+.project__btn {
+  padding: 12px 35px;
+  border: 2px solid #ffffff87;
+  border-radius: 5px;
+  transition: 0.4s ease;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a.project__btn:hover {
+  background-color: #f9004d;
+  border: 2px solid #f9004d;
+}
+
+.view__more__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+@media (max-width: 1024px) {
+  h5.project__text {
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  @media (max-width: 1024px) {
+    h5.project__text {
+      font-weight: 400;
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 936px) {
+  .project__box {
+    width: 330px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project__box {
+    width: 400px;
+  }
+}
+
+@media (max-width: 492px) {
+  .project__box {
+    width: 300px;
+  }
+  .project__btn {
+    height: 55px;
+  }
+}
