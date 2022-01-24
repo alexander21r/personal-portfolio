@@ -2,9 +2,15 @@ import React, { useState, useEffect } from "react";
 import Hamburger from "hamburger-react";
 import "./Home.css";
 import { Typewriter } from "react-simple-typewriter";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import SocialIcons from "./SocialIcons";
 
-function Home(props) {
+function Home() {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
+
   window.addEventListener("scroll", () => {
     const header = document.querySelector(".header");
     header.classList.toggle("active", window.scrollY > 0);
@@ -16,7 +22,7 @@ function Home(props) {
     <div className="home" id="home">
       <div className="home__bg">
         <div className="header">
-          <div className="navigation ">
+          <div className="navigation">
             <ul className="navbar">
               <a href="#home">
                 <li className="nav__items">Home</li>
@@ -50,21 +56,24 @@ function Home(props) {
 
           {show ? (
             <div>
-              <ul className="sidebar">
+              <ul
+                className="sidebar"
+                data-aos="fade-left"
+                data-aos-duration="500">
                 <li className="sideNavbar">
-                  <a href="">Home</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li className="sideNavbar ">
-                  <a href="">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li className="sideNavbar">
-                  <a href="">Skills</a>
+                  <a href="#skills">Skills</a>
                 </li>
                 <li className="sideNavbar">
-                  <a href="">Projects</a>
+                  <a href="projects">Projects</a>
                 </li>
                 <li className="sideNavbar">
-                  <a href="">Contact</a>
+                  <a href="contact">Contact</a>
                 </li>
               </ul>
             </div>

@@ -152,15 +152,17 @@ li.sideNavbar:hover {
   padding-bottom: 0px;
 }
 
-.hamIcon:hover {
-  transform: scale(1.2);
-  transition: 0.3s ease;
-}
 @media (min-width: 769px) {
   .social__icons__mini__nav,
   .hamIcon,
   .sidebar {
     display: none;
+  }
+}
+
+@media(max-width:698px){
+  h1.home__text{
+    font-size: 2vw;
   }
 }
 

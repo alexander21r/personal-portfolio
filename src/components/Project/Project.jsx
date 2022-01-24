@@ -1,11 +1,8 @@
-import React, {useEffect} from "react";
+import React from "react";
 import "./Project.css";
 import { data } from "./Projectss";
 
-
 function Project() {
-  
-
   return (
     <div className="project component__space" id="projects">
       <div className="heading">
@@ -21,7 +18,7 @@ function Project() {
           ad.
         </p>
       </div>
-      <div className="container" >
+      <div className="container">
         <div className="row">
           {data.map((data, key) => {
             const { title, img } = data;
