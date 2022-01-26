@@ -1,13 +1,13 @@
 import React, { useRef, useState } from "react";
 import "./Contact.css";
-import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
-function Contact(props) {
+function Contact() {
   const form = useRef();
   const [result, setResult] = useState(false);
 
   const sendEmail = (e) => {
+    e.preventDefault();
     emailjs
       .sendForm(
         "service_mcei58i",
@@ -32,14 +32,6 @@ function Contact(props) {
     }, 5000);
   };
 
-  const {
-    register,
-    reset,
-    formState: { errors },
-    handleSubmit,
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-
   return (
     <div className="contact component__space" id="contact">
       <div className="row">
@@ -50,7 +42,10 @@ function Contact(props) {
               <p className="hire__text">
                 Use the form below. Or, for a quicker response, ping me over on{" "}
                 {""}
-                <a href="" className="contactInfo__form">
+                <a
+                  href="https://www.linkedin.com/in/alexander-rasoli-157888218/"
+                  target="_blank"
+                  className="contactInfo__form">
                   LinkedIn
                 </a>
               </p>
@@ -64,7 +59,7 @@ function Contact(props) {
               </p>
             </div>
             <div className="input__box">
-              <form onSubmit={handleSubmit(sendEmail)} ref={form} name="form">
+              <form onSubmit={sendEmail} ref={form} name="form">
                 <input
                   type="text"
                   name="name"

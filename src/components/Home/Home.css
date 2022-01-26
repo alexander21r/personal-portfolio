@@ -101,7 +101,6 @@ h3.home__text {
   float: right;
   z-index: 1000;
   width: 100%;
-  cursor: pointer;
   padding: 0px;
   padding: 20px 0px;
   padding-bottom: 0px;
@@ -160,8 +159,8 @@ li.sideNavbar:hover {
   }
 }
 
-@media(max-width:698px){
-  h1.home__text{
+@media (max-width: 698px) {
+  h1.home__text {
     font-size: 2vw;
   }
 }

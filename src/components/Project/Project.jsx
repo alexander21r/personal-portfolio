@@ -21,7 +21,7 @@ function Project() {
       <div className="container">
         <div className="row">
           {data.map((data, key) => {
-            const { title, img } = data;
+            const { title, img, sourceCode, viewProject } = data;
             return (
               <div className="col__2" key={key}>
                 <div className="project__box ">
@@ -34,10 +34,16 @@ function Project() {
                   <div className="project__meta ">
                     <h5 className="project__text">{title}</h5>
                     <div className="project__btns">
-                      <a href="Details" className="project__btn">
+                      <a
+                        href={sourceCode}
+                        target="_blank"
+                        className="project__btn">
                         Source code
                       </a>
-                      <a href="Details" className="project__btn">
+                      <a
+                        href={viewProject}
+                        target="_blank"
+                        className="project__btn">
                         View project
                       </a>
                     </div>

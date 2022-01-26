@@ -18,6 +18,7 @@ h1.about__heading {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: -80px;
 }
 
 a.bottom__to__top {

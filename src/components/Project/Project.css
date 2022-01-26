@@ -108,6 +108,7 @@ a.project__btn:hover {
   align-items: center;
   justify-content: center;
   padding: 30px;
+  margin-bottom: -50px;
 }
 
 @media (max-width: 1024px) {
@@ -115,16 +116,6 @@ a.project__btn:hover {
     font-weight: 400;
     font-size: 20px;
     padding-bottom: 20px;
-  }
-}
-
-@media (max-width: 580px) {
-  @media (max-width: 1024px) {
-    h5.project__text {
-      font-weight: 400;
-      font-size: 20px;
-      padding-bottom: 20px;
-    }
   }
 }
 

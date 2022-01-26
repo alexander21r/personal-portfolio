@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./About.css";
-import about from "../img/about.jpg";
-import placeHolder from "./placeholder.jpg"
+import placeHolder from "../img/placeholder.jpg"
 import {FaChevronUp} from "react-icons/fa"
 
 function About() {
