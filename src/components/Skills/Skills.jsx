@@ -18,7 +18,7 @@ function Service() {
               <div className="service__meta">
                 <h1 className="service__text1">Frameworks/Libarys </h1>
                 <p className="p service__text2  p__color">
-                  React <FaReact className="icons"/>
+                  React <FaReact className="icons react"/>
                   <br />
                   Sass <FaSass className="icons"/>
                   Boostrap <FaBootstrap className="icons"/>
@@ -33,9 +33,9 @@ function Service() {
               <div className="service__meta">
                 <h1 className="service__text1">Languages </h1>
                 <p className="p service__text2 p__color">
-                  HTML <FaHtml5 className="icons"/>
+                  HTML <FaHtml5 className="icons lang"/>
                   <br />
-                  CSS <FaCss3Alt className="icons"/>
+                  CSS <FaCss3Alt className="icons lang"/>
                   <br />
                   Javascript <SiJavascript className="icons"/>
                 </p>

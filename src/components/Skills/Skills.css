@@ -70,3 +70,18 @@ h1.service__text {
     padding: 32px;
   }
 }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .react {
+    margin-bottom: -30px;
+  }
+
+  .lang {
+    margin-bottom: -30px;
+  }
+  
+}
+@-moz-document url-prefix() {
+  .icons {
+    margin-bottom: 0px;
+  }
+}
