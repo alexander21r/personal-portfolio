@@ -38,13 +38,13 @@ function Project() {
                         href={sourceCode}
                         target="_blank"
                         className="project__btn">
-                        Source code
+                        <div className="btn__center">Source code</div>
                       </a>
                       <a
                         href={viewProject}
                         target="_blank"
                         className="project__btn">
-                        View project
+                        <div className="btn__center">View project</div>
                       </a>
                     </div>
                   </div>

@@ -70,10 +70,10 @@ function Home() {
                   <a href="#skills">Skills</a>
                 </li>
                 <li className="sideNavbar">
-                  <a href="projects">Projects</a>
+                  <a href="#projects">Projects</a>
                 </li>
                 <li className="sideNavbar">
-                  <a href="contact">Contact</a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -84,7 +84,7 @@ function Home() {
           <div className="home__content">
             <div className="home__meta">
               <h1 className="home__text">Welcome to my world</h1>
-              <h2 className="home__text">Hi im Alexander Rasoli</h2>
+              <h2 className="home__text">Hi I'm Alexander Rasoli</h2>
               <h3 className="home__text ">
                 <Typewriter
                   words={["<Frontend Developer />", "<Web Developer />"]}
