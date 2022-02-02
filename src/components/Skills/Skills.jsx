@@ -21,7 +21,7 @@ function Service() {
                   React <FaReact className="icons react"/>
                   <br />
                   Sass <FaSass className="icons"/>
-                  Boostrap <FaBootstrap className="icons"/>
+                  Bootstrap <FaBootstrap className="icons"/>
                 </p>
               </div>
             </div>
