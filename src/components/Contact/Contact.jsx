@@ -10,10 +10,10 @@ function Contact() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_mcei58i",
-        "template_rs6pe26",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "user_STsY1VNfnoujzk86WDl0H"
+        process.env.REACT_APP_USER_ID
       )
 
       .then(
